@@ -1,0 +1,135 @@
+html::-webkit-scrollbar{
+    width: 0.5rem;
+    background: transparent;
+}
+html::-webkit-scrollbar-thumb{
+    border-radius: 4rem;
+    background: purple;
+}
+
+body{
+    background-image: url(../img/gif\ video.webp);
+}
+span{
+    color: whitesmoke;
+}
+
+header{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background:  #000000fd;
+    box-shadow: 0 8px 11px rgb(14 55 54 / 15%);
+    padding: 20px 100px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.profile{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    cursor: pointer;
+}
+.profile img{
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+.profile span{
+    font-size: 13px;
+    font-weight: 500;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-size: 1.9rem;
+    font-weight: 600;
+    color: whitesmoke;
+    column-gap: 0.5rem;
+    text-decoration: none;
+
+}
+.logo .bx{
+    font-size: 24px;
+    color: purple;
+}
+.navbar{
+    display: flex;
+    column-gap: 0,5rem;
+    color: whitesmoke;
+    list-style: none;
+}
+
+.navbar a{
+        font-size: 1rem;
+        font-weight: 500;
+        color: var(--text-color);
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+}
+
+.img-div{ 
+    height:300px;
+    display: flex;
+    margin-top: 20px;
+}
+
+.h6{
+    color: whitesmoke;
+}
+
+.h7{
+    color: whitesmoke;
+}
+
+.bx{
+    color: whitesmoke;
+}
+
+.copyright{
+    text-align: center;
+    padding: 30px;
+    color: purple;
+}
+
+#home-active{
+    color: red;
+}
+
+#homeactive2{
+    color: orangered;
+}
+
+#homeactive3{
+    color: yellow;
+}
+
+#homeactive4{
+    color: green;
+}
+
+#homeactive5{
+    color: rgb(51, 51, 243);
+}
+
+
+
+
+
+
+/* at the end of the css file */
+#pre-loader{
+    background:  #000000 url(../img/simple\ book\ loader.gif) no-repeat center center;
+    background-size: 30%;
+    height: 100vh;
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+}

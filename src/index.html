@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./img/Screenshot_20240318-213528_1.png" imgtype="image/x-icon">
+    <title>Godwin's gif library</title>
+</head>
+
+<body>
+    
+    <!-- loader -->
+    <div id="pre-loader"></div>
+
+
+
+
+
+    <header>
+        <a href="#" class="logo"><i class='bx bxs-movie'></i>Giphy</a>
+        <!-- menu-icon -->
+        <div class="bx bx-menu" id="menu-icon"></div>
+        <!-- nav-list -->
+        <ul class="navbar">
+            <li><a href="#home" id="home-active">Docs</a></li>
+            <li><a href="#categories" id="homeactive2">Dashboard</a></li>
+            <li><a href="#A-Z" id="homeactive3">FAQs</a></li>
+            <li><a href="#about" id="homeactive4">API Explorer</a></li>
+            <li><a href="#customers" id="homeactive5">Blog</a></li>
+
+        </ul>
+        <!-- Profile -->
+        <div class="profile">
+            <span>Login</span>
+            <i class="bx bx-caret-down"></i>
+        </div>
+    </header>
+    <br><br><br><br><br>
+
+
+
+
+    <div class="container">
+        <h1 class="text-center text-primary">Godwin Gif Library</h1>
+        <div class="search-gif">
+            <h2 class="text-primary my-3">Search</h2>
+            <label class="h6">Search for your favourite gifs:</label><br>
+            <div class="col-md-3 list-inline-item">
+                <input type="search" id="inputted-search" class="form-control">
+            </div>
+            <button class="btn btn-outline-primary" type="button" id="searchbtn">Search</button>
+            <div class="img-div" id="searched-img">
+
+            </div>
+        </div>
+
+        <div class="trending-gif">
+            <h2 class="text-primary my-3">Trending</h2>
+            <p class="h6">This are the hottest trending gifs</p>
+            <div class="img-div row" id="trending-img" style="height: auto;">
+            </div>
+        </div>
+
+        <div class="random-gif">
+            <h2 class="text-primary my-3">Random</h2>
+            <p class="h6">select the rating and Click on the randomize button to select a random gif</p>
+            <p class="h7">Ratings:</p>
+            <div class="col-md-3">
+                <select name="rating" class="form-control" id="rating">
+                    <option value="g">g</option>
+                    <option value="pg">pg</option>
+                    <option value="pg-13">pg-13</option>
+                    <option value="r">r</option>
+                </select>
+                <button class="btn-block btn-primary mt-2 btn" id="random-btn">Randomize</button>
+            </div>
+
+            <div class="img-div mb-3" id="random-img">
+            </div>
+        </div>
+    </div>
+
+    <div class="copyright">
+        <p>&#169; GIPHY All Right Reserved</p>
+    </div>
+</body>
+
+
+         <script>
+            var loader = document.getElementById("pre-loader");
+
+            
+            window.addEventListener("load", function(){
+                setTimeout(function(){
+                    loader.style.display = "none";
+                }, 4000);
+            });
+         </script>
+
+</html>
